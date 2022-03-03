@@ -1,0 +1,17 @@
+#root {
+  width: 50%;
+  text-align: center;
+  background-color: teal;
+  padding: 20px;
+}
+
+#myBtn {
+  background-color: green;
+}
+#notes > div {
+  display: flex;
+  justify-content: center;
+}
+#notes {
+  border: 1px dotted black;
+}
