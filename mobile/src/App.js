@@ -3,10 +3,10 @@ import "./App.css";
 
 function App() {
   let data1 = [
-    { name: "android" },
-    { name: "blackberry" },
-    { name: "iphone" },
-    { name: "windows phone" },
+    { name: "android", age: 10 },
+    { name: "blackberry", age: 10 },
+    { name: "iphone", age: 10 },
+    { name: "windows phone", age: 10 },
   ];
   let data2 = [
     { name: "samsung" },
