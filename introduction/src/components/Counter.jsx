@@ -12,6 +12,7 @@ export const Counter = ({ value }) => {
       <h2>COUNTER = {counter}</h2>
       <button onClick={() => handleChange(1)}>ADD</button>
       <button onClick={() => handleChange(-1)}>SUB</button>
+      <button onClick={() => handleChange(2)}>ADD 2</button>
       <button onClick={() => handleChange(counter)}>DOUBLE</button>
     </>
   );
