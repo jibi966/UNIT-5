@@ -1,0 +1,64 @@
+{
+  "lists": [
+    {
+      "title": "Nooddles",
+      "purchased": false,
+      "id": 1
+    },
+    {
+      "title": "Apple",
+      "purchased": false,
+      "id": 2
+    },
+    {
+      "title": "Mango",
+      "purchased": false,
+      "id": 3
+    },
+    {
+      "title": "Coconut",
+      "purchased": false,
+      "id": 4
+    },
+    {
+      "title": "aval",
+      "purchased": false,
+      "id": 5
+    },
+    {
+      "title": "redmi",
+      "purchased": false,
+      "id": 6
+    },
+    {
+      "title": "samsung",
+      "purchased": false,
+      "id": 7
+    },
+    {
+      "title": "apple",
+      "purchased": false,
+      "id": 8
+    },
+    {
+      "title": "dell",
+      "purchased": false,
+      "id": 9
+    },
+    {
+      "title": "lenovo",
+      "purchased": false,
+      "id": 10
+    },
+    {
+      "title": "oppo",
+      "purchased": false,
+      "id": 11
+    },
+    {
+      "title": "realmi",
+      "purchased": false,
+      "id": 12
+    }
+  ]
+}
