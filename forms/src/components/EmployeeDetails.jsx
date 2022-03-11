@@ -64,6 +64,7 @@ export const Employe = () => {
           value={formData.name}
           onChange={handleOtherData}
         />
+        <br />
         <input
           id="age"
           type="number"
@@ -71,6 +72,7 @@ export const Employe = () => {
           value={formData.age}
           onChange={handleOtherData}
         />
+        <br />
         <input
           id="address"
           type="text"
@@ -78,6 +80,7 @@ export const Employe = () => {
           value={formData.address}
           onChange={handleOtherData}
         />
+        <br />
         <select
           id="department"
           onChange={handleOtherData}
@@ -91,6 +94,7 @@ export const Employe = () => {
           <option value="Back-end">Back-end</option>
           <option value="Full-stack">Full-stack</option>
         </select>
+        <br />
         <input
           id="salary"
           type="number"
@@ -98,32 +102,39 @@ export const Employe = () => {
           value={formData.salary}
           onChange={handleOtherData}
         />
+        <br />
         <input
           type="checkbox"
           id="married"
           checked={formData.married}
           onChange={handleCheckbox}
         />
+
         <label htmlFor="married">married</label>
+        <br />
         <input type="submit" value="Submit" />
       </form>
-      <table>
-        <thead>
-          <tr>
-            <td>Name</td>
-            <td>Age</td>
-            <td>Address</td>
-            <td>Department</td>
-            <td>Salary</td>
-            <td>Marriage</td>
-          </tr>
-        </thead>
-        <tbody>
-          {data.map((e) => (
-            <Tables {...e} />
-          ))}
-        </tbody>
-      </table>
+      <br />
+      <br />
+      <div>
+        <table>
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Age</td>
+              <td>Address</td>
+              <td>Department</td>
+              <td>Salary</td>
+              <td>Marriage</td>
+            </tr>
+          </thead>
+          <tbody>
+            {data.map((e) => (
+              <Tables {...e} />
+            ))}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 };
