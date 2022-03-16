@@ -1,13 +1,14 @@
 import { useState } from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import { Employe } from "./components/EmployeeDetails";
+import { Button } from "./components/Body/Button";
+import { Cart } from "./components/Navbar/Cart";
 
 function App() {
-  
   return (
     <div className="App">
-      <Employe />
+      <Cart />
+      <Button />
     </div>
   );
 }

@@ -1,13 +1,12 @@
 import { useState } from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import { Employe } from "./components/EmployeeDetails";
+import { Data } from "./components/Data";
 
 function App() {
-  
   return (
     <div className="App">
-      <Employe />
+      <Data />
     </div>
   );
 }
