@@ -1,9 +1,7 @@
 .App {
   text-align: center;
 }
-a {
-  padding: 10px;
-}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -37,8 +35,4 @@ a {
   to {
     transform: rotate(360deg);
   }
-}
-
-button {
-  font-size: calc(10px + 2vmin);
 }
