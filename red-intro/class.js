@@ -24,7 +24,8 @@
 const { createStore } = require("redux");
 
 const reducer = (store, { type, payload }) => {
-  //some action that check the state and update the values in the store
+  // some action that check the state and update the values in the store
+  // reducer always returns a new state
   switch (type) {
     case "ADD_COUNT":
       return { ...store, count: store.count + payload };

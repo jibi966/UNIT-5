@@ -9,10 +9,11 @@ export const RoutesMain = () => {
     <>
       <Navbar />
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/products" element={<ProductsPage />} />
-        <Route path="/products/:id" element={<ProductsDetailsPage />} />
-        <Route path="/notfound" element={<NotFoundPage />} />
+        <Route exact path="/" element={<HomePage />} />
+        <Route exact path="/products" element={<ProductsPage />} />
+        <Route exact path="/products/:id" element={<ProductsDetailsPage />} />
+        <Route exact path="/notfound" element={<NotFoundPage />} />
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </>
   );
