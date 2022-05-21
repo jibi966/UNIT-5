@@ -1,14 +1,14 @@
 import { useState, useEffect, useRef } from "react";
 export const Timer = () => {
   const [timer, setTimer] = useState(0);
-  const [isRunnig, setisRunning] = useState(false);
+  const [isRunning, setisRunning] = useState(false);
   const timerRef = useRef();
   useEffect(() => {
     startTimer();
     return pauseTimer;
   }, []);
   const startTimer = () => {
-    if (isRunnig) {
+    if (isRunning) {
       return;
     }
     timerRef.current = setInterval(() => {
@@ -20,17 +20,24 @@ export const Timer = () => {
     clearInterval(timerRef.current);
     setisRunning(false);
   };
+  const stopTimer = () => {
+    clearInterval(timerRef.current);
+    setisRunning(false);
+    setTimer(0);
+  };
   return (
     <div>
       <h2>{timer}</h2>
       <br />
-      <button disabled={isRunnig} onClick={startTimer}>
-        Resume
+      <button disabled={isRunning} onClick={startTimer}>
+        {timer === 0 ? "Start" : "Resume"}
       </button>
       <br />
-      <button disabled={!isRunnig} onClick={pauseTimer}>
+      <button disabled={!isRunning} onClick={pauseTimer}>
         Pause
       </button>
+      <br />
+      <button onClick={stopTimer}>Reset</button>
     </div>
   );
 };
